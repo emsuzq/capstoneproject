@@ -14,5 +14,5 @@ print(gbmIMP)
 ##Feature Selection for Math Class
 
 mathcontrol2 <- rfeControl(functions=rfFuncs, method="cv", number=10)
-results <- rfe(cclass[,c(1:6, 8:27, 29:30)], cclass[,33], sizes=c(1:29), rfeControl = mathcontrol2)
-predictors(results)
+results <- rfe(cclass[,c(1:6, 8:27, 29:30)], cclass[,33], sizes=c(1:20), rfeControl = mathcontrol2)
+r1<-predictors(results)
