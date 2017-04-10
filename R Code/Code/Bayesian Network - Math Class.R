@@ -16,7 +16,7 @@ graphviz.plot(math_dag2)
 
 suffStat <- list(C = cor(mathclass[, c(r1,"G3")]), n = nrow(mathclass[, c(r1,"G3")]))
 skelpc.fit <- skeleton(suffStat, indepTest = gaussCItest, p = ncol(mathclass[, c(r1,"G3")]), alpha = 0.05)
-pc.fit <- pc(suffStat, indepTest = gaussCItest, p = ncol(mathclass[, c(r1,"G3")]), alpha = 0.05, colnames(c(r1,"G3")))
+pc.fit <- pc(suffStat, indepTest = gaussCItest, p = ncol(mathclass[, c(r1,"G3")]), alpha = 0.05)
 plot(skelpc.fit, main = "Estimated Dag")
 plot(pc.fit, main = "True Dag")
 
