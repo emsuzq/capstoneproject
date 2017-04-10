@@ -9,3 +9,4 @@ cclass=merge(mathclass,portclass,by=c("school","sex","age","address","famsize","
 ##Data Preparation 
 
 cclass[1:53]<- lapply(cclass[1:53], as.numeric)
+mathclass[1:33] <- lapply(mathclass[1:33], as.numeric)

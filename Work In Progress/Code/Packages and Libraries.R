@@ -13,6 +13,7 @@ library(caret)
 library(mlbench)
 library(randomForest)
 library(bnlearn)
+library(pcalg)
 
 ##Installing source for plotting graphics (will be used for Bayesian Network)
 source("https://bioconductor.org/biocLite.R")
